@@ -1,14 +1,14 @@
 <template>
     <div>
         <input type="file" v-on:change="addPicture($event)" />
-        <button @click="addPicture()">Add Picture</button>
+        <!-- <button @click="addPicture()">Add Picture</button> -->
         <p>Data added: {{ addedData }}</p>
-        <p>Data updated: {{ updatedData }}</p>
+        <!-- <p>Data updated: {{ updatedData }}</p>
         <p>Data deleted: {{ deletedData }}</p>
         <button @click="addData">Add Data</button>
         <button @click="readData">Read Data</button>
         <button @click="updateData">Update Data</button>
-        <button @click="deleteData">Delete Data</button>
+        <button @click="deleteData">Delete Data</button> -->
         <ul>
             <li v-for="customer in customers" :key="customer.ssn">
                 {{ customer.name }} - {{ customer.email }}
